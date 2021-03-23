@@ -1,7 +1,7 @@
 export default {
   fonts: {
-    body: 'system-ui, sans-serif',
-    heading: '"Avenir Next", sans-serif',
+    body: '"Josefin Sans", sans-serif',
+    heading: '"Josefin Sans", sans-serif',
     monospace: 'Menlo, monospace',
   },
   colors: {
