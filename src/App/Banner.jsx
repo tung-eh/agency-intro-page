@@ -31,6 +31,7 @@ const Banner = () => {
               fontWeight: 700,
               color: 'white',
               mixBlendMode: 'difference',
+              zIndex: 20,
             }}
           >
             <Line>Creating unique brands is</Line>

@@ -34,7 +34,6 @@ const OverlayBottom = () => (
       bg: 'black',
       bottom: 0,
       right: [0, 0, 'calc(100vw * 2 / 3)'],
-      zIndex: 10,
       ':nth-child(2)': {
         right: [0, 0, 'calc(100vw / 3)'],
         top: ['100%', '100%', 'unset'],
@@ -50,13 +49,21 @@ const OverlayBottom = () => (
 const Intro = () => {
   return (
     <Box>
-      <Box sx={{ height: '50vh', position: 'absolute', width: '100%' }}>
+      <Box
+        sx={{ height: '50vh', position: 'absolute', width: '100%', zIndex: 10 }}
+      >
         <OverlayTop />
         <OverlayTop />
         <OverlayTop />
       </Box>
       <Box
-        sx={{ height: '50vh', position: 'absolute', width: '100%', bottom: 0 }}
+        sx={{
+          height: '50vh',
+          position: 'absolute',
+          width: '100%',
+          bottom: 0,
+          zIndex: 10,
+        }}
       >
         <OverlayBottom />
         <OverlayBottom />
