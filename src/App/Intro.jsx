@@ -3,6 +3,7 @@ import React from 'react'
 
 const OverlayTop = ({ sx }) => (
   <Box
+    className="overlay-top"
     sx={{
       position: 'absolute',
       height: '100%',
@@ -25,6 +26,7 @@ const OverlayTop = ({ sx }) => (
 
 const OverlayBottom = () => (
   <Box
+    className="overlay-bottom"
     sx={{
       position: 'absolute',
       height: '100%',

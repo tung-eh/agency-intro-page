@@ -10,13 +10,26 @@ import theme from '../theme'
 
 function App() {
   useEffect(() => {
-    gsap.timeline().from('.line span', 1.8, {
-      y: 100,
-      ease: 'power4.out',
-      delay: 1,
-      skewY: 0.7,
-      stagger: 0.3,
-    })
+    gsap
+      .timeline()
+      .from('.line span', 1.8, {
+        y: 100,
+        ease: 'power4.out',
+        delay: 1,
+        skewY: 0.7,
+        stagger: 0.3,
+      })
+      .to('.overlay-top', 1.6, {
+        height: 0,
+        ease: 'expo.inOut',
+        stagger: 0.4,
+      })
+      .to('.overlay-bottom', 1.6, {
+        width: 0,
+        ease: 'expo.inOut',
+        delay: -0.8,
+        stagger: 0.4,
+      })
   }, [])
 
   return (
