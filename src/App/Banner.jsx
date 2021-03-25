@@ -6,6 +6,7 @@ import Row from '../components/Row'
 
 const Line = ({ children }) => (
   <Box
+    className="line"
     sx={{
       height: [32, 48, 56],
       mb: 2,
