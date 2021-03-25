@@ -1,7 +1,7 @@
-import { Box, Container, Heading, IconButton, Link, Text } from 'theme-ui'
+import { Box, Container, Heading, Link, Text } from 'theme-ui'
 import React from 'react'
 
-import { ReactComponent as RightArrow } from '../assets/arrow-right.svg'
+import Icon from '../components/Icon'
 import Row from '../components/Row'
 
 const Line = ({ children }) => (
@@ -19,7 +19,7 @@ const Line = ({ children }) => (
 
 const Banner = () => {
   return (
-    <Box sx={{}}>
+    <Box sx={{ bg: 'white' }}>
       <Container sx={{ height: '50vh' }}>
         <Row sx={{ flexDirection: 'column', justifyContent: 'center' }}>
           <Heading
@@ -44,14 +44,15 @@ const Banner = () => {
                 display: 'flex',
                 alignItems: 'center',
                 fontWeight: 600,
-                ':hover > button': {
+                ':hover > svg': {
                   bg: 'black',
                   color: 'white',
                 },
               }}
             >
               More about us
-              <IconButton
+              <Icon
+                name="arrow-right"
                 sx={{
                   p: ['4px', '6px', '12px'],
                   ml: 3,
@@ -62,9 +63,7 @@ const Banner = () => {
                   boxSizing: 'content-box',
                   transition: '0.4s ease-in-out',
                 }}
-              >
-                <RightArrow />
-              </IconButton>
+              />
             </Link>
           </Box>
         </Row>
