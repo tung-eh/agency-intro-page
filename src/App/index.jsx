@@ -30,6 +30,12 @@ function App() {
         delay: -0.8,
         stagger: 0.4,
       })
+      .from('.case-image img', 1.6, {
+        scale: 1.4,
+        ease: 'expo.inOut',
+        delay: -2,
+        stgger: 0.4,
+      })
   }, [])
 
   return (

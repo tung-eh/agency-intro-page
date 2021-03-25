@@ -37,6 +37,7 @@ const CaseItem = ({ subtitle, title, img }) => (
     }}
   >
     <Box
+      className="case-image"
       sx={{
         position: 'absolute',
         top: 0,
