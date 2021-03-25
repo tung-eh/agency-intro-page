@@ -6,7 +6,7 @@ import Row from '../../components/Row'
 
 const Header = () => {
   return (
-    <Box sx={{ position: 'fixed', width: '100%' }}>
+    <Box sx={{ position: 'fixed', width: '100%', zIndex: 10 }}>
       <Container sx={{ height: [96, 128] }}>
         <Row sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
           <Box>
