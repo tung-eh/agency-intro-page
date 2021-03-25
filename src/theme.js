@@ -20,6 +20,9 @@ export default {
       textDecoration: 'none',
     },
   },
+  heading: {
+    my: '0.83em',
+  },
   layout: {
     container: {
       maxWidth: ['100%', '100%', '1280px'],

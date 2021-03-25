@@ -26,7 +26,6 @@ const Banner = () => {
             sx={{
               fontSize: ['1.7rem', '2.4rem', '3rem'],
               lineHeight: ['2.2rem', '3rem', '4.2rem'],
-              my: '0.83em',
               mt: [72, 'revert'],
               fontWeight: 700,
               color: 'white',
