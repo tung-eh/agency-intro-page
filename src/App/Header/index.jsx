@@ -15,7 +15,7 @@ const Header = () => {
               sx={{
                 fontSize: '1.2rem',
                 letterSpacing: '0.5rem',
-                fontWeight: 'bold',
+                fontWeight: 700,
               }}
             >
               AGENCY.
