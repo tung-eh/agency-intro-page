@@ -48,7 +48,7 @@ const OverlayBottom = () => (
 
 const Intro = () => {
   return (
-    <Box>
+    <Box className="intro-overlay">
       <Box
         sx={{ height: '50vh', position: 'absolute', width: '100%', zIndex: 10 }}
       >
