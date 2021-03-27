@@ -1,7 +1,8 @@
 import { Box, Flex } from 'theme-ui'
 import React from 'react'
 
-import Icon from '../../components/Icon'
+import Icon from '../../../components/Icon';
+
 
 const NavButton = ({ disabled = false, icon }) => (
   <Flex

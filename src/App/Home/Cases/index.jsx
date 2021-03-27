@@ -2,9 +2,9 @@ import { Box, Flex, Heading, Image, Text } from 'theme-ui'
 import React from 'react'
 
 import NavButtons from './NavButtons'
-import curologyImg from '../../assets/curology-min.png'
-import luminImg from '../../assets/lumin-min.png'
-import yourspaceImg from '../../assets/yourspace-min.png'
+import curologyImg from '../../../assets/curology-min.png'
+import luminImg from '../../../assets/lumin-min.png'
+import yourspaceImg from '../../../assets/yourspace-min.png'
 
 const caseStudies = [
   {

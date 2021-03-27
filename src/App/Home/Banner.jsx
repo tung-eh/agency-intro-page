@@ -1,8 +1,8 @@
 import { Box, Container, Heading, Link, Text } from 'theme-ui'
 import React from 'react'
 
-import Icon from '../components/Icon'
-import Row from '../components/Row'
+import Icon from '../../components/Icon'
+import Row from '../../components/Row'
 
 const Line = ({ children }) => (
   <Box
