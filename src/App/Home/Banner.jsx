@@ -1,8 +1,9 @@
-import { Box, Container, Heading, Link, Text } from 'theme-ui'
+import { Box, Container, Heading, Text } from 'theme-ui'
 import React from 'react'
 
 import Icon from '../../components/Icon'
 import Row from '../../components/Row'
+import Link from '../../components/Link'
 
 const Line = ({ children }) => (
   <Box
@@ -39,7 +40,7 @@ const Banner = () => {
           </Heading>
           <Box sx={{ width: 256, position: 'relative' }}>
             <Link
-              href="/"
+              to="/about-us"
               sx={{
                 fontSize: ['1.1rem', '1.3rem', '1.6rem'],
                 display: 'flex',

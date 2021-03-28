@@ -1,6 +1,7 @@
-import { Box, Container, Link } from 'theme-ui'
+import { Box, Container } from 'theme-ui'
 import React from 'react'
 
+import Link from '../../components/Link'
 import Navigator from './Navigator'
 import Row from '../../components/Row'
 
@@ -11,7 +12,7 @@ const Header = () => {
         <Row sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
           <Box>
             <Link
-              href="/"
+              to="/"
               sx={{
                 fontSize: '1.2rem',
                 letterSpacing: '0.5rem',
