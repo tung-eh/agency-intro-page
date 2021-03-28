@@ -32,7 +32,7 @@ const Home = () => {
         scale: 1.4,
         ease: 'expo.inOut',
         delay: -2,
-        stgger: 0.4,
+        stagger: 0.4,
       })
   }, [])
 
