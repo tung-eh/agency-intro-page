@@ -15,15 +15,11 @@ const Stick = ({ sx, ...props }) => (
   />
 )
 
-const HamburgerMenu = () => (
+const HamburgerIcon = () => (
   <Box sx={{ width: [20, 25] }}>
     <Stick />
     <Stick />
   </Box>
 )
 
-const Navigator = () => {
-  return <HamburgerMenu />
-}
-
-export default Navigator
+export default HamburgerIcon

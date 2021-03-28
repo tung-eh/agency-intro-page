@@ -1,8 +1,8 @@
 import { Box, Container } from 'theme-ui'
 import React from 'react'
 
+import HamburgerIcon from './HamburgerIcon'
 import Link from '../../components/Link'
-import Navigator from './Navigator'
 import Row from '../../components/Row'
 
 const Header = () => {
@@ -22,7 +22,7 @@ const Header = () => {
               AGENCY.
             </Link>
           </Box>
-          <Navigator />
+          <HamburgerIcon />
         </Row>
       </Container>
     </Box>
