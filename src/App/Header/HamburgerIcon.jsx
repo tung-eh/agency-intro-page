@@ -15,8 +15,8 @@ const Stick = ({ sx, ...props }) => (
   />
 )
 
-const HamburgerIcon = () => (
-  <Box sx={{ width: [20, 25] }}>
+const HamburgerIcon = (props) => (
+  <Box sx={{ width: [20, 25] }} {...props}>
     <Stick />
     <Stick />
   </Box>

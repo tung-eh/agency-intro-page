@@ -22,7 +22,6 @@ const ContactGroup = ({ label, children, ...props }) => (
     sx={{
       my: '1em',
       width: '50%',
-      '&nth-child(2)': { display: ['none', 'none', 'block'] },
       '> div': {
         fontSize: ['1rem', '1.2rem', '1.4rem'],
         fontWeight: 300,
@@ -40,13 +39,11 @@ const ContactGroup = ({ label, children, ...props }) => (
 
 const Navigation = () => (
   <Box
+    className="nav"
     sx={{
-      position: 'fixed',
-      left: 0,
-      top: 0,
       width: '100%',
-      height: '100%',
       bg: '#fff3d8',
+      height: 0,
       a: {
         position: 'relative',
         '&:after': {
@@ -72,7 +69,7 @@ const Navigation = () => (
         sx={{
           flexDirection: ['column', 'column', 'row'],
           px: [3, 4],
-          py: '125px',
+          pt: '125px',
         }}
       >
         <NavColumn

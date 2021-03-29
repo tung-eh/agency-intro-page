@@ -14,6 +14,7 @@ export default {
     root: {
       margin: 0,
       fontFamily: 'body',
+      overflow: 'hidden',
     },
     a: {
       color: 'inherit',
