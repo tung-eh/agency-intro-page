@@ -1,4 +1,4 @@
-import { Container, Heading, ThemeProvider } from 'theme-ui'
+import { Box, Container, Heading, ThemeProvider } from 'theme-ui'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import React from 'react'
 
@@ -8,11 +8,13 @@ import Row from '../components/Row'
 import theme from '../theme'
 
 const DefaultPage = ({ name }) => (
-  <Container sx={{ height: '100vh' }}>
-    <Row sx={{ height: '100%', alignItems: 'center' }}>
-      <Heading as="h3">This is the {name} page</Heading>
-    </Row>
-  </Container>
+  <Box sx={{ bg: 'white' }}>
+    <Container sx={{ height: '100vh' }}>
+      <Row sx={{ height: '100%', alignItems: 'center' }}>
+        <Heading as="h3">This is the {name} page</Heading>
+      </Row>
+    </Container>
+  </Box>
 )
 
 function App() {
@@ -20,21 +22,23 @@ function App() {
     <ThemeProvider theme={theme}>
       <Router>
         <Header />
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route exact path="/case-studies">
-          <DefaultPage name="case studies" />
-        </Route>
-        <Route exact path="/approach">
-          <DefaultPage name="approach" />
-        </Route>
-        <Route exact path="/services">
-          <DefaultPage name="services" />
-        </Route>
-        <Route exact path="/about-us">
-          <DefaultPage name="about" />
-        </Route>
+        <Box sx={{ position: 'relative', zIndex: 5 }}>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/case-studies">
+            <DefaultPage name="case studies" />
+          </Route>
+          <Route exact path="/approach">
+            <DefaultPage name="approach" />
+          </Route>
+          <Route exact path="/services">
+            <DefaultPage name="services" />
+          </Route>
+          <Route exact path="/about-us">
+            <DefaultPage name="about" />
+          </Route>
+        </Box>
       </Router>
     </ThemeProvider>
   )
