@@ -1,5 +1,7 @@
-import { Box, Container, Flex, Link } from 'theme-ui'
+import { Box, Container, Flex } from 'theme-ui'
 import React from 'react'
+
+import Link from '../../components/Link'
 
 const NavColumn = ({ width, label, children, ...props }) => (
   <Box sx={{ width: ['100%', width] }}>
