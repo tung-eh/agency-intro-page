@@ -1,6 +1,7 @@
 import { Box, Container, Heading, ThemeProvider } from 'theme-ui'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import React from 'react'
+import React, { useEffect } from 'react'
+import gsap from 'gsap'
 
 import Header from './Header'
 import Home from './Home'
@@ -18,6 +19,11 @@ const DefaultPage = ({ name }) => (
 )
 
 function App() {
+  useEffect(() => {
+    // Prevent content jump when using gsap.from()
+    gsap.to('body', { css: { visibility: 'visible' } })
+  })
+
   return (
     <ThemeProvider theme={theme}>
       <Router>

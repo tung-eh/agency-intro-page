@@ -15,6 +15,7 @@ export default {
       margin: 0,
       fontFamily: 'body',
       overflow: 'hidden',
+      visibility: 'hidden',
     },
     a: {
       color: 'inherit',
